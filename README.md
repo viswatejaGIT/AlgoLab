@@ -32,18 +32,18 @@ its comprehensive machine learning model comparison tool built with Streamlit th
 
 1. Clone the repository:
 
-git clone https://github.com/viswatejaGIT/AlgoLab.git
-cd AlgoLab
+- git clone https://github.com/viswatejaGIT/AlgoLab.git
+- cd AlgoLab
 
 
 2. Install dependencies:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 3. Run the application:
 
-streamlit run app.py
+- streamlit run app.py
 
 
 ## Usage
