@@ -1,6 +1,8 @@
 # AlgoLab - ML Model Comparison Platform
 
-A comprehensive machine learning model comparison tool built with Streamlit that allows users to compare 5 top ML algorithms across classification and regression tasks.
+AlgoLab is like a smart assistant that helps you find the best way to predict things from your data. You simply upload your Excel or CSV file, and it automatically tests 5 different prediction methods to tell you which one works best. It's like having 5 different experts analyze your data and then showing you which expert gives the most accurate predictions. 
+
+its comprehensive machine learning model comparison tool built with Streamlit that allows users to compare 5 top ML algorithms across classification and regression tasks. This can be a helping tool for data scientist. 
 
 ## Features
 
@@ -29,20 +31,20 @@ A comprehensive machine learning model comparison tool built with Streamlit that
 ## Installation
 
 1. Clone the repository:
-```bash
+
 git clone https://github.com/viswatejaGIT/AlgoLab.git
 cd AlgoLab
-```
+
 
 2. Install dependencies:
-```bash
+
 pip install -r requirements.txt
-```
+
 
 3. Run the application:
-```bash
+
 streamlit run app.py
-```
+
 
 ## Usage
 
