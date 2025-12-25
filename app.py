@@ -212,7 +212,7 @@ def calculate_composite_score(results, problem_type):
     return results.sort_values('Composite_Score', ascending=False)
 
 
- # ------------------------------- Main App l0ok ----------------------------------
+ # ------------------------------- Main App look ----------------------------------
 
 st.markdown('<h1 class="main-header">AlgoLab</h1>', unsafe_allow_html=True)
 st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666;">Machine Learning Model Comparison Platform</p>', unsafe_allow_html=True)
@@ -318,6 +318,16 @@ with t1:
             st.session_state['features'] = selected
             st.session_state['problem_type'] = problem_type
             st.success(f"Configuration saved!  || Target: {target_col} || Features: {len(selected)} || problem_type: {problem_type}")
+            
+            # Navigation note
+            st.markdown("---")
+            st.markdown(
+                '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem; border-radius: 10px; text-align: center; margin: 1rem 0;">'
+                '<h4 style="margin: 0; color: white;">Ready for Analysis!</h4>'
+                '<p style="margin: 0.5rem 0 0 0; color: white;">Please navigate to the <strong>"Model Analysis"</strong> tab to perform ML model comparison and get insights.</p>'
+                '</div>', 
+                unsafe_allow_html=True
+            )
 
 
 # ------------------------- tab2 [Model Analysis] -----------------------------------------
@@ -339,7 +349,7 @@ with t2:
         with st.spinner("Training model..."):
             
             # data preprocessing
-            X,y = data_preprocessing(df, target, features)  # ERROR: Function name should be 'prepare_data'
+            X,y = data_preprocessing(df, target, features)
 
             # model training and evaluation
             model_results = train_and_evaluate_models(X,y, problem_type)
