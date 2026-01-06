@@ -406,6 +406,7 @@ with t2:
         
         # Top models
         st.subheader('Top Models')
+        st.info("**Composite Score Explanation**: This is a single number (0 to 1) that combines all individual performance metrics into one overall ranking. Instead of looking at different evaluation scores separately, the composite score gives you one final score to easily compare which model performs best overall. A score closer to 1.0 means better performance.")
         top_2 = results.head(2)
         col1, col2 = st.columns(2)
         

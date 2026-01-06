@@ -37,7 +37,7 @@ Thumbs.db
 
 
 
-# Data files (optional - remove if you want to include sample data)
+# Data files
 *.csv
 *.xlsx
 *.xls
